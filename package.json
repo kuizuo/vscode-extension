@@ -20,6 +20,7 @@
 	],
 	"icon": "static/img/icon.png",
 	"activationEvents": [
+		"*",
 		"onCommand:kuizuo-plugin.helloWorld"
 	],
 	"main": "./dist/extension.js",
@@ -27,11 +28,6 @@
 		"configuration": {
 			"title": "kuizuo-plugin",
 			"properties": {
-				"kuizuoPlugin.yourName": {
-					"type": "string",
-					"default": "kuizuo",
-					"description": "名称"
-				},
 				"kuizuoPlugin.showTip": {
 					"type": "boolean",
 					"default": true,

@@ -4,6 +4,7 @@ import { activate as newFile } from './core/newFile'
 import { activate as statusBar } from './core/statusBar'
 import { activate as helloWorld } from './core/helloWorld'
 import { activate as log } from './core/log'
+import { activate as hover } from './core/hover'
 
 export function activate(context: vscode.ExtensionContext) {
   console.log('扩展“kuizuo-plugin”已被激活！')
@@ -15,6 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   statusBar(context)
   log(context)
+  hover(context)
 }
 
 export function deactivate() {}

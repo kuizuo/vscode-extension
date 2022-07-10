@@ -4,7 +4,7 @@ import { exec } from 'child_process'
 const workspacePath = vscode.workspace.workspaceFolders?.[0].uri.path ?? ''
 const isWindows = /^\/.:\//.test(workspacePath)
 
-export async function activate(context: vscode.ExtensionContext) {
+export async function activate() {
   const key = 'kuizuoPlugin.showTip'
   const showTip = vscode.workspace.getConfiguration().get(key)
   if (showTip) {

@@ -3,6 +3,7 @@ import * as vscode from 'vscode'
 let myStatusBarItem: vscode.StatusBarItem
 
 export function activate(context: vscode.ExtensionContext) {
+  vscode.window.setStatusBarMessage('开始您的编程之旅！', 5000)
   const myCommandId = 'kuizuo-plugin.showStatusBarItem'
   context.subscriptions.push(
     vscode.commands.registerCommand(myCommandId, () => {

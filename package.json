@@ -48,12 +48,8 @@
 				"title": "新建测试文件"
 			},
 			{
-				"command": "kuizuo-plugin.showStatusBarItem",
-				"title": "Hello World",
-				"icon": {
-					"light": "public/lollipop.svg",
-					"dark": "public/lollipop.svg"
-				}
+				"command": "kuizuo-plugin.insertLog",
+				"title": "插入日志输出"
 			}
 		],
 		"keybindings": [
@@ -67,6 +63,11 @@
 				"command": "kuizuo-plugin.newFile",
 				"key": "shift+alt+n",
 				"when": "editorTextFocus"
+			},
+			{
+				"command": "kuizuo-plugin.insertLog",
+				"key": "ctrl+alt+l",
+				"when": "editorHasSelection"
 			},
 			{
 				"command": "cursorUp",
@@ -104,6 +105,11 @@
 				{
 					"when": "editorFocus",
 					"command": "kuizuo-plugin.helloWorld",
+					"group": "navigation"
+				},
+				{
+					"when": "editorHasSelection",
+					"command": "kuizuo-plugin.insertLog",
 					"group": "navigation"
 				}
 			],

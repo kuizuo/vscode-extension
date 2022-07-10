@@ -59,6 +59,36 @@
 				"command": "kuizuo-plugin.newFile",
 				"key": "shift+alt+n",
 				"when": "editorTextFocus"
+			},
+			{
+				"command": "cursorUp",
+				"key": "shift+alt+i",
+				"when": "textInputFocus"
+			},
+			{
+				"command": "cursorDown",
+				"key": "shift+alt+k",
+				"when": "textInputFocus"
+			},
+			{
+				"command": "cursorLeft",
+				"key": "shift+alt+j",
+				"when": "textInputFocus"
+			},
+			{
+				"command": "cursorRight",
+				"key": "shift+alt+l",
+				"when": "textInputFocus"
+			},
+			{
+				"command": "cursorHome",
+				"key": "shift+alt+h",
+				"when": "textInputFocus"
+			},
+			{
+				"command": "cursorEnd",
+				"key": "shift+alt+;",
+				"when": "textInputFocus"
 			}
 		],
 		"menus": {

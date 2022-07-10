@@ -141,7 +141,13 @@
 					"name": "视图2"
 				}
 			]
-		}
+		},
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run package",

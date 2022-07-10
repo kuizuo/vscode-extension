@@ -1,0 +1,35 @@
+{
+  "for循环": {
+    "prefix": "for",
+    "body": [
+      "for (const ${2:value} of ${1:iterable}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "for循环"
+  },
+  "Print to console": {
+    "prefix": "log",
+    "body": [
+      "console.log('$1');",
+      "$2"
+    ],
+    "description": "Log output to console"
+  },
+  "kzget": {
+    "prefix": "kzget",
+    "body": [
+      "let response = await http.get(${1})",
+      "$2"
+    ],
+    "description": "kz-http get"
+  },
+  "kzpost": {
+    "prefix": "kzpost",
+    "body": [
+      "let response = await http.post(${1}, ${2})",
+      "$3"
+    ],
+    "description": "kz-http post"
+  }
+}

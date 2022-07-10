@@ -46,6 +46,14 @@
 			{
 				"command": "kuizuo-plugin.newFile",
 				"title": "新建测试文件"
+			},
+			{
+				"command": "kuizuo-plugin.showStatusBarItem",
+				"title": "Hello World",
+				"icon": {
+					"light": "public/lollipop.svg",
+					"dark": "public/lollipop.svg"
+				}
 			}
 		],
 		"keybindings": [
@@ -125,8 +133,12 @@
 		"views": {
 			"demo": [
 				{
-					"id": "demo1",
-					"name": "测试"
+					"id": "view1",
+					"name": "视图1"
+				},
+				{
+					"id": "view2",
+					"name": "视图2"
 				}
 			]
 		}

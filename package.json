@@ -50,6 +50,14 @@
 			{
 				"command": "kuizuo-plugin.insertLog",
 				"title": "插入日志输出"
+			},
+			{
+				"command": "kuizuo-plugin.openWebview",
+				"title": "打开Webview",
+				"icon": {
+					"light": "public/logo.png",
+					"dark": "public/logo.png"
+				}
 			}
 		],
 		"keybindings": [
@@ -115,8 +123,7 @@
 			],
 			"editor/title": [
 				{
-					"when": "resourceLangId == javascript",
-					"command": "kuizuo-plugin.helloWorld",
+					"command": "kuizuo-plugin.openWebview",
 					"group": "navigation"
 				}
 			],

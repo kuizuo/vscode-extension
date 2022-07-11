@@ -3,7 +3,7 @@ import * as fs from 'fs'
 import { sep } from 'path'
 
 export function activate(context: vscode.ExtensionContext) {
-  const disposable = vscode.commands.registerCommand('kuizuo-plugin.newFile', async (uri: vscode.Uri) => {
+  const disposable = vscode.commands.registerCommand('vscode-extension.newFile', async (uri: vscode.Uri) => {
     vscode.window.showQuickPick(['js', 'ts'], {}).then(async (item) => {
       console.log(uri?.fsPath)
       if (!uri?.fsPath) {

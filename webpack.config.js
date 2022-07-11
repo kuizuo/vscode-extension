@@ -37,12 +37,6 @@ const extensionConfig = {
             loader: 'ts-loader'
           }
         ]
-      },
-      {
-        test: /\.(png|jpg|jpeg|gif|bmp|svg|ico)$/,
-        loader: 'url-loader',
-        options: {
-        }
       }
     ]
   },

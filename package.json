@@ -1,31 +1,32 @@
 {
-	"name": "kuizuo-plugin",
-	"displayName": "kuizuo-plugin",
-	"description": "a vscode plugin demo by kuizuo",
+	"name": "vscode-extension-sample",
+	"displayName": "VSCode-extension",
+	"description": "a vscode extension sample by kuizuo",
 	"keywords": [
 		"vscode",
-		"plugin",
+		"extension",
 		"demo"
 	],
 	"version": "1.0.0",
 	"author": {
 		"name": "kuizuo"
 	},
+	"repository": "https://github.com/kuizuo/vscode-extension",
 	"publisher": "kuizuo",
 	"engines": {
-		"vscode": "^1.60.0"
+		"vscode": "^1.69.0"
 	},
 	"categories": [
 		"Other"
 	],
-	"icon": "public/icon.png",
+	"icon": "public/logo.png",
 	"activationEvents": [
-		"*"
+		"onStartupFinished"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"configuration": {
-			"title": "kuizuo-plugin",
+			"title": "vscode-extension",
 			"properties": {
 				"kuizuoPlugin.showTip": {
 					"type": "boolean",
@@ -36,7 +37,7 @@
 		},
 		"commands": [
 			{
-				"command": "kuizuo-plugin.helloWorld",
+				"command": "vscode-extension.helloWorld",
 				"title": "Hello World",
 				"icon": {
 					"light": "public/lollipop.svg",
@@ -44,15 +45,15 @@
 				}
 			},
 			{
-				"command": "kuizuo-plugin.newFile",
+				"command": "vscode-extension.newFile",
 				"title": "新建测试文件"
 			},
 			{
-				"command": "kuizuo-plugin.insertLog",
+				"command": "vscode-extension.insertLog",
 				"title": "插入日志输出"
 			},
 			{
-				"command": "kuizuo-plugin.openWebview",
+				"command": "vscode-extension.openWebview",
 				"title": "打开Webview",
 				"icon": {
 					"light": "public/logo.png",
@@ -62,18 +63,18 @@
 		],
 		"keybindings": [
 			{
-				"command": "kuizuo-plugin.helloWorld",
+				"command": "vscode-extension.helloWorld",
 				"key": "ctrl+f10",
 				"mac": "cmd+f10",
 				"when": "editorTextFocus"
 			},
 			{
-				"command": "kuizuo-plugin.newFile",
+				"command": "vscode-extension.newFile",
 				"key": "shift+alt+n",
 				"when": "editorTextFocus"
 			},
 			{
-				"command": "kuizuo-plugin.insertLog",
+				"command": "vscode-extension.insertLog",
 				"key": "ctrl+alt+l",
 				"when": "editorHasSelection"
 			},
@@ -112,24 +113,24 @@
 			"editor/context": [
 				{
 					"when": "editorFocus",
-					"command": "kuizuo-plugin.helloWorld",
+					"command": "vscode-extension.helloWorld",
 					"group": "navigation"
 				},
 				{
 					"when": "editorHasSelection",
-					"command": "kuizuo-plugin.insertLog",
+					"command": "vscode-extension.insertLog",
 					"group": "navigation"
 				}
 			],
 			"editor/title": [
 				{
-					"command": "kuizuo-plugin.openWebview",
+					"command": "vscode-extension.openWebview",
 					"group": "navigation"
 				}
 			],
 			"explorer/context": [
 				{
-					"command": "kuizuo-plugin.newFile",
+					"command": "vscode-extension.newFile",
 					"group": "navigation"
 				}
 			]

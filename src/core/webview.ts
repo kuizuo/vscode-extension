@@ -20,7 +20,7 @@ function getWebViewContent(context: vscode.ExtensionContext, templatePath: strin
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
-    vscode.commands.registerCommand('kuizuo-plugin.openWebview', (uri) => {
+    vscode.commands.registerCommand('vscode-extension.openWebview', (uri) => {
       // 创建webview
       const panel = vscode.window.createWebviewPanel(
         'blogWebview', // viewType

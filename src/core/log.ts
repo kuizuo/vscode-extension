@@ -20,7 +20,7 @@ class MyCompletionItemProvider implements vscode.CompletionItemProvider {
     const label = item.label
     if (this.position && typeof label === 'string') {
       item.command = {
-        command: 'kuizuo-plugin.log',
+        command: 'vscode-extension.log',
         title: 'refactor',
         arguments: [this.position.translate(0, label.length + 1)], // 这里可以传递参数给该命令
       }
@@ -31,7 +31,7 @@ class MyCompletionItemProvider implements vscode.CompletionItemProvider {
 }
 
 export function activate(context: vscode.ExtensionContext) {
-  const commandId = 'kuizuo-plugin.log'
+  const commandId = 'vscode-extension.log'
   const commandHandler = (editor: vscode.TextEditor, edit: vscode.TextEditorEdit, position: vscode.Position) => {
     const lineText = editor.document.lineAt(position.line).text
     // match case name.log etc.
@@ -74,7 +74,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(
     vscode.commands.registerTextEditorCommand(
-      'kuizuo-plugin.insertLog',
+      'vscode-extension.insertLog',
       (editor: vscode.TextEditor, edit: vscode.TextEditorEdit) => {
         // 获取选中代码 在其下方插入 console.log(xxx)
         const { selection, selections } = editor

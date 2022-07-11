@@ -4,7 +4,7 @@ let myStatusBarItem: vscode.StatusBarItem
 
 export function activate(context: vscode.ExtensionContext) {
   vscode.window.setStatusBarMessage('开始您的编程之旅！', 5000)
-  const myCommandId = 'kuizuo-plugin.showStatusBarItem'
+  const myCommandId = 'vscode-extension.showStatusBarItem'
   context.subscriptions.push(
     vscode.commands.registerCommand(myCommandId, () => {
       const n = getNumberOfSelectedLines(vscode.window.activeTextEditor)

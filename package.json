@@ -7,7 +7,7 @@
 		"extension",
 		"demo"
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": {
 		"name": "kuizuo"
 	},
@@ -106,6 +106,11 @@
 			{
 				"command": "cursorEnd",
 				"key": "shift+alt+;",
+				"when": "textInputFocus"
+			},
+			{
+				"command": "cursorWordLeft",
+				"key": "ctrl+shift+alt+j",
 				"when": "textInputFocus"
 			}
 		],

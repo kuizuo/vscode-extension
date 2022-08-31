@@ -1,21 +1,19 @@
 {
 	"name": "vscode-extension-sample",
-	"displayName": "VSCode-extension",
+	"displayName": "Vscode Extension",
 	"description": "a vscode extension sample by kuizuo",
 	"keywords": [
 		"vscode",
 		"extension",
 		"demo"
 	],
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": {
-		"name": "kuizuo"
+		"name": "kuizuo",
+		"email": "hi@kuizuo.cn"
 	},
 	"repository": "https://github.com/kuizuo/vscode-extension",
 	"publisher": "kuizuo",
-	"engines": {
-		"vscode": "^1.69.0"
-	},
 	"categories": [
 		"Other"
 	],
@@ -23,7 +21,7 @@
 	"activationEvents": [
 		"onStartupFinished"
 	],
-	"main": "./dist/extension.js",
+	"main": "./out/extension.js",
 	"contributes": {
 		"configuration": {
 			"title": "vscode-extension",
@@ -63,17 +61,6 @@
 		],
 		"keybindings": [
 			{
-				"command": "vscode-extension.helloWorld",
-				"key": "ctrl+f10",
-				"mac": "cmd+f10",
-				"when": "editorTextFocus"
-			},
-			{
-				"command": "vscode-extension.newFile",
-				"key": "shift+alt+n",
-				"when": "editorTextFocus"
-			},
-			{
 				"command": "vscode-extension.insertLog",
 				"key": "ctrl+alt+l",
 				"when": "editorHasSelection"
@@ -111,6 +98,11 @@
 			{
 				"command": "cursorWordLeft",
 				"key": "ctrl+shift+alt+j",
+				"when": "textInputFocus"
+			},
+			{
+				"command": "cursorWordRight",
+				"key": "ctrl+shift+alt+l",
 				"when": "textInputFocus"
 			}
 		],
@@ -165,38 +157,37 @@
 			{
 				"language": "javascript",
 				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/vue.json"
 			}
 		]
 	},
 	"scripts": {
-		"vscode:prepublish": "yarn run package",
-		"compile": "webpack",
-		"watch": "webpack --watch",
-		"package": "webpack --mode production --devtool hidden-source-map",
-		"compile-tests": "tsc -p . --outDir out",
-		"watch-tests": "tsc -p . -w --outDir out",
-		"pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+		"vscode:prepublish": "pnpm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "pnpm run compile && pnpm run lint",
 		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js",
-		"publish": "vsce publish"
+		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
+		"@types/vscode": "^1.43.0",
 		"@types/glob": "^7.2.0",
-		"@types/mocha": "^9.1.1",
+    "@types/mocha": "^9.1.1",
 		"@types/node": "16.x",
-		"@types/vscode": "^1.69.0",
 		"@typescript-eslint/eslint-plugin": "^5.30.0",
 		"@typescript-eslint/parser": "^5.30.0",
 		"@vscode/test-electron": "^2.1.5",
 		"eslint": "^8.18.0",
 		"glob": "^8.0.3",
-		"mocha": "^10.0.0",
-		"ts-loader": "^9.3.1",
-		"typescript": "^4.7.4",
-		"webpack": "^5.73.0",
-		"webpack-cli": "^4.10.0"
+    "mocha": "^10.0.0",
+		"typescript": "^4.6.3",
+    "vsce": "^2.7.0"
 	},
-	"dependencies": {
-		"url-loader": "^4.1.1"
-	}
+	"engines": {
+		"vscode": "^1.43.0"
+	},
+	"preview": true
 }

@@ -1,0 +1,20 @@
+{
+  "vue template": {
+    "scope": "vue",
+    "prefix": "vue",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "\t$1",
+      "</script>\n",
+      "<template>",
+      "\t<div>",
+      "\t\tdemo",
+      "\t</div>",
+      "</template>\n",
+      "<style scoped>",
+      "\t$3",
+      "</style>\n"
+    ],
+    "description": "vue script template style"
+  }
+}

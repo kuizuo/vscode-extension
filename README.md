@@ -6,5 +6,5 @@
 
 开源地址：[kuizuo/vscode-extension (github.com)](https://github.com/kuizuo/vscode-extension)
 
-相关文章: [写一个VSCode扩展](https://kuizuo.cn/develop/vscode-extension)
+相关文章: [写一个VSCode扩展](https://kuizuo.cn/vscode-extension)
 

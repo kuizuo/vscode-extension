@@ -7,7 +7,7 @@
 		"extension",
 		"demo"
 	],
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": {
 		"name": "kuizuo",
 		"email": "hi@kuizuo.cn"
@@ -104,6 +104,16 @@
 				"command": "cursorWordRight",
 				"key": "ctrl+shift+alt+l",
 				"when": "textInputFocus"
+			},
+			{
+				"command": "editor.action.quickFix",
+				"key": "alt+oem_period",
+				"when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "shift+alt+enter",
+				"command": "editor.action.autoFix",
+				"when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
 			}
 		],
 		"menus": {

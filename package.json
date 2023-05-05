@@ -7,7 +7,7 @@
 		"extension",
 		"demo"
 	],
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"author": {
 		"name": "kuizuo",
 		"email": "hi@kuizuo.cn"
@@ -53,58 +53,49 @@
 		],
 		"keybindings": [
 			{
-				"command": "vscode-extension.insertLog",
-				"key": "ctrl+alt+l",
-				"when": "editorHasSelection"
-			},
-			{
 				"command": "cursorUp",
-				"key": "shift+alt+i",
+				"win": "shift+alt+i",
+				"mac": "ctrl+shift+cmd+i",
 				"when": "textInputFocus"
 			},
 			{
 				"command": "cursorDown",
-				"key": "shift+alt+k",
+				"win": "shift+alt+k",
+				"mac": "ctrl+shift+cmd+k",
 				"when": "textInputFocus"
 			},
 			{
 				"command": "cursorLeft",
-				"key": "shift+alt+j",
+				"win": "shift+alt+j",
+				"mac": "ctrl+shift+cmd+j",
 				"when": "textInputFocus"
 			},
 			{
 				"command": "cursorRight",
-				"key": "shift+alt+l",
+				"win": "shift+alt+l",
+				"mac": "ctrl+shift+cmd+l",
 				"when": "textInputFocus"
 			},
 			{
 				"command": "cursorHome",
-				"key": "shift+alt+h",
+				"win": "shift+alt+h",
+				"mac": "ctrl+shift+cmd+h",
 				"when": "textInputFocus"
 			},
 			{
 				"command": "cursorEnd",
-				"key": "shift+alt+;",
-				"when": "textInputFocus"
-			},
-			{
-				"command": "cursorWordLeft",
-				"key": "ctrl+shift+alt+j",
-				"when": "textInputFocus"
-			},
-			{
-				"command": "cursorWordRight",
-				"key": "ctrl+shift+alt+l",
+				"win": "shift+alt+;",
+				"mac": "ctrl+shift+cmd+;",
 				"when": "textInputFocus"
 			},
 			{
 				"command": "editor.action.quickFix",
-				"key": "alt+oem_period",
+				"win": "alt+oem_period",
 				"when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
 			},
 			{
-				"key": "shift+alt+enter",
 				"command": "editor.action.autoFix",
+				"win": "shift+alt+enter",
 				"when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
 			}
 		],
@@ -113,11 +104,6 @@
 				{
 					"when": "editorFocus",
 					"command": "vscode-extension.helloWorld",
-					"group": "navigation"
-				},
-				{
-					"when": "editorHasSelection",
-					"command": "vscode-extension.insertLog",
 					"group": "navigation"
 				}
 			],

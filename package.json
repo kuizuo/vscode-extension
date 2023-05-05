@@ -7,7 +7,7 @@
 		"extension",
 		"demo"
 	],
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"author": {
 		"name": "kuizuo",
 		"email": "hi@kuizuo.cn"
@@ -41,14 +41,6 @@
 					"light": "public/lollipop.svg",
 					"dark": "public/lollipop.svg"
 				}
-			},
-			{
-				"command": "vscode-extension.newFile",
-				"title": "新建测试文件"
-			},
-			{
-				"command": "vscode-extension.insertLog",
-				"title": "插入日志输出"
 			},
 			{
 				"command": "vscode-extension.openWebview",

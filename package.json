@@ -7,7 +7,7 @@
 		"extension",
 		"demo"
 	],
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"author": {
 		"name": "kuizuo",
 		"email": "hi@kuizuo.cn"
@@ -55,37 +55,37 @@
 			{
 				"command": "cursorUp",
 				"win": "shift+alt+i",
-				"mac": "ctrl+shift+cmd+i",
+				"mac": "alt+cmd+i",
 				"when": "textInputFocus"
 			},
 			{
 				"command": "cursorDown",
 				"win": "shift+alt+k",
-				"mac": "ctrl+shift+cmd+k",
+				"mac": "alt+cmd+k",
 				"when": "textInputFocus"
 			},
 			{
 				"command": "cursorLeft",
 				"win": "shift+alt+j",
-				"mac": "ctrl+shift+cmd+j",
+				"mac": "alt+cmd+j",
 				"when": "textInputFocus"
 			},
 			{
 				"command": "cursorRight",
 				"win": "shift+alt+l",
-				"mac": "ctrl+shift+cmd+l",
+				"mac": "alt+cmd+l",
 				"when": "textInputFocus"
 			},
 			{
 				"command": "cursorHome",
 				"win": "shift+alt+h",
-				"mac": "ctrl+shift+cmd+h",
+				"mac": "alt+cmd+h",
 				"when": "textInputFocus"
 			},
 			{
 				"command": "cursorEnd",
 				"win": "shift+alt+;",
-				"mac": "ctrl+shift+cmd+;",
+				"mac": "alt+cmd+;",
 				"when": "textInputFocus"
 			},
 			{
